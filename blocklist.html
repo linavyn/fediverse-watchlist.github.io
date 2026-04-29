@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fediverse Server Watchlist</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#0f1117;
+    color:#e6e6f0;
+    max-width:1100px;
+    margin:auto;
+    padding:2rem;
+    line-height:1.6;
+}
+h1{
+    font-size:2.2rem;
+    margin-bottom:.5rem;
+}
+.subtitle{
+    color:#aaa;
+    margin-bottom:2rem;
+}
+.notice{
+    background:#171a22;
+    padding:1rem;
+    border-left:4px solid #8f7cff;
+    border-radius:12px;
+    margin-bottom:2rem;
+}
+.search-box{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#1b1f29;
+    color:white;
+    margin-bottom:2rem;
+    font-size:1rem;
+}
+.category{
+    margin-bottom:2.5rem;
+}
+.category h2{
+    border-bottom:1px solid #2a2f3d;
+    padding-bottom:.5rem;
+    margin-bottom:1rem;
+    color:#c7bcff;
+}
+.server-card{
+    background:#171a22;
+    padding:1rem;
+    border-radius:14px;
+    margin-bottom:1rem;
+}
+.server-name{
+    font-weight:bold;
+    font-size:1.05rem;
+}
+.tag{
+    display:inline-block;
+    background:#252b38;
+    color:#ddd;
+    font-size:.75rem;
+    padding:4px 8px;
+    border-radius:999px;
+    margin-right:6px;
+    margin-top:6px;
+}
+.reason{
+    margin-top:.7rem;
+    color:#ccc;
+}
+footer{
+    text-align:center;
+    color:#777;
+    margin-top:3rem;
+    font-size:.85rem;
+}
+</style>
+</head>
+<body>
+
+<h1>Fediverse Server Watchlist</h1>
+<p class="subtitle">A categorized reference of servers with moderation concerns, spam issues, scraping activity, or other notable behavior.</p>
+
+<div class="notice">
+This list is presented as a personal moderation reference. Inclusion does not imply every user on an instance shares the same behavior.
+</div>
+
+<input type="text" id="searchInput" class="search-box" placeholder="Search servers...">
+
+<!-- SPAM -->
+<section class="category">
+<h2>Spam / Bot Abuse</h2>
+
+<div class="server-card">
+<div class="server-name">mastodon.social</div>
+<div class="reason">Recurring spam bots and concerns about moderation response.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">poliversity.it</div>
+<div class="reason">Uncontrolled spam.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">elderscrolls.space</div>
+<div class="reason">Repeated spam activity.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">piclub.social</div>
+<div class="reason">Large volume of spam accounts.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">pika.moe</div>
+<div class="reason">Large volume of spam accounts.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">vive.im</div>
+<div class="reason">Spam bots.</div>
+</div>
+ <div class="server-card">
+<div class="server-name">activitypub-troll.cf</div>
+<div class="reason">Reported for trolling, spam, and abusive activity.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">a.gup.pe</div>
+<div class="reason">Known for spam and hostile account activity.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">hunk.city</div>
+<div class="reason">Repeated spam-related complaints.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">alive.bar</div>
+<div class="reason">Associated with ongoing spam waves.</div>
+</div> 
+
+</section>
+
+<!-- EXTREMISM -->
+<section class="category">
+<h2>Extremism / Hate</h2>
+
+<div class="server-card">
+<div class="server-name">maga.place</div>
+<div class="reason">Misinformation and political extremism concerns.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">poa.st</div>
+<div class="reason">Racism and violent content reports.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">nazi.social</div>
+<div class="reason">Explicit extremist branding.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">goyim.social</div>
+<div class="reason">Nazi-related content.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">freeatlantis.com</div>
+<div class="reason">Neo-Nazi and misinformation concerns.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">write.dembased.xyz</div>
+<div class="reason">Extreme racist content.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">1611.social</div>
+<div class="reason">Reported for anti-LGBTQ and hate speech concerns.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">adachi.party</div>
+<div class="reason">Linked to harassment and racist content.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">bae.st</div>
+<div class="reason">Reported for extremist and hateful content.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">subs4social.xyz</div>
+<div class="reason">Known for racist content and harassment concerns.</div>
+</div>
+  
+
+</section>
+
+<!-- AI -->
+<section class="category">
+<h2>AI Scraping / AI Spam</h2>
+
+<div class="server-card">
+<div class="server-name">hf.space</div>
+<div class="tag">subdomain</div>
+<div class="reason">Hosts AI-generated content.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">ai.wiki</div>
+<div class="reason">AI-generated content and spam hosting.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">newsbeep.org</div>
+<div class="reason">AI-generated spam posts.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">social.manalejandro.com</div>
+<div class="reason">Scraping posts for AI training.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">hub.worsersofthe.world</div>
+<div class="reason">AI bot scanning #fediverse for training data.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">alpaca.gold</div>
+<div class="reason">LLM scraping behavior.</div>
+</div>
+<div class="server-card">
+<div class="server-name">activitypub.awakari.com</div>
+<div class="reason">Reported for automated scraping of fediverse content.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">awakari.com</div>
+<div class="reason">Associated with large-scale data scraping.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">social.freysa.ai</div>
+<div class="reason">AI-generated posting behavior.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">pravda.me</div>
+<div class="reason">Reported as an AI-generated spam source.</div>
+</div>
+</section>
+
+<!-- ABANDONED -->
+<section class="category">
+<h2>Abandoned / Offline</h2>
+
+<div class="server-card">
+<div class="server-name">9kb.me</div>
+<div class="reason">Appears abandoned with only spam accounts remaining.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">seal.cafe</div>
+<div class="tag">shutdown</div>
+<div class="reason">No longer online.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">froth.zone</div>
+<div class="tag">shutdown</div>
+<div class="reason">Server no longer exists.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">m.pupu.moe</div>
+<div class="reason">Appears abandoned.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">tooters.org</div>
+<div class="reason">Server appears gone.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">social.beaware.live</div>
+<div class="reason">No longer actively used.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">srilanka.rasitha.dynu.com</div>
+<div class="reason">Appears abandoned with spam remaining.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">tcpcat.net</div>
+<div class="reason">Inactive server with lingering spam accounts.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">tootnet.nl</div>
+<div class="reason">Appears abandoned and largely unmaintained.</div>
+</div>
+  
+</section>
+
+<!-- NSFW -->
+<section class="category">
+<h2>Adult / NSFW</h2>
+
+<div class="server-card">
+<div class="server-name">asstodon.social</div>
+<div class="reason">Adult-focused Mastodon instance.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">gay.camera</div>
+<div class="reason">Adult-focused server.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">baraag.net</div>
+<div class="reason">Heavy NSFW content.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">mastodon.sexycubs.xyz</div>
+<div class="reason">Inappropriate adult content.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">posting.l***on.rocks</div>
+<div class="reason">Adult content server.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">shotakey.everythingyaoi.com</div>
+<div class="reason">Explicit NSFW content.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">miiverse.cafe</div>
+<div class="reason">Reported for inappropriate material.</div>
+</div>
+  
+</section>
+
+<!-- OTHER -->
+<section class="category">
+<h2>Other Moderation Concerns</h2>
+
+<div class="server-card">
+<div class="server-name">pizza.enby.city</div>
+<div class="reason">Accusations toward other instances without clear evidence.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">quasselkopf.de</div>
+<div class="reason">AI-generated replies and impersonation concerns.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">neondystopia.world</div>
+<div class="reason">Federating with known extremist servers.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">vtuberfan.social</div>
+<div class="reason">Repeated reports of ignored moderation issues.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">annihilation.social</div>
+<div class="reason">Repeated harassment complaints.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">asbestos.cafe</div>
+<div class="reason">Frequently reported for hostile behavior.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">vtuberfan.social</div>
+<div class="reason">Reports of moderation issues being ignored.</div>
+</div>
+
+<div class="server-card">
+<div class="server-name">todon.eu</div>
+<div class="reason">Associated with coordinated harassment complaints.</div>
+</div>
+
+</section>
+
+<footer>
+Last updated manually • categorized moderation reference
+</footer>
+
+<script>
+document.getElementById("searchInput").addEventListener("keyup", function () {
+    const filter = this.value.toLowerCase();
+    document.querySelectorAll(".server-card").forEach(card => {
+        card.style.display = card.textContent.toLowerCase().includes(filter) ? "" : "none";
+    });
+});
+</script>
+
+</body>
+</html>
